@@ -1,2 +1,2 @@
-# modus_zad-der_fabulant
-Code des Projekts "Der Fabulant" (modus|zad), zur Beobachtung &amp; Auswertung von Verschwörungideologien in sozialen Medien
+# _Der Fabulant_
+Code for the project "Der Fabulant" by (modus|zad). The project monitors and analyzes conspiracy ideologies in German-speaking social media.
