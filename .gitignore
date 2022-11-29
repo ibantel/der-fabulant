@@ -1,8 +1,9 @@
 # Manual ignored files
 api_access_ibantel.txt
+/.idea/
+/data/
 
 # Default ignored files
-/.idea/
 /shelf/
 /workspace.xml
 # Datasource local storage ignored files

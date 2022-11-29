@@ -1,0 +1,102 @@
+# This file contains descriptions of selected Telethon classes of interest
+
+
+# MESSAGE class
+class telethon.tl.custom.message.Message(
+    id: int,
+    peer_id: Union[
+                        telethon.tl.types.PeerUser,
+                        telethon.tl.types.PeerChat,
+                        telethon.tl.types.PeerChannel
+                    ] = None,
+    date: Optional[datetime.datetime] = None,
+    out: Optional[bool] = None,
+    mentioned: Optional[bool] = None,
+    media_unread: Optional[bool] = None,
+    silent: Optional[bool] = None,
+    post: Optional[bool] = None,
+    from_id: Union[
+                    telethon.tl.types.PeerUser,
+                    telethon.tl.types.PeerChat,
+                    telethon.tl.types.PeerChannel,
+                    None
+                ] = None,
+    reply_to: Optional[telethon.tl.types.MessageReplyHeader] = None,
+    ttl_period: Optional[int] = None,
+    message: Optional[str] = None,
+    fwd_from: Optional[telethon.tl.types.MessageFwdHeader] = None,
+    via_bot_id: Optional[int] = None,
+    media: Union[
+                    telethon.tl.types.MessageMediaEmpty,
+                    telethon.tl.types.MessageMediaPhoto,
+                    telethon.tl.types.MessageMediaGeo,
+                    telethon.tl.types.MessageMediaContact,
+                    telethon.tl.types.MessageMediaUnsupported,
+                    telethon.tl.types.MessageMediaDocument,
+                    telethon.tl.types.MessageMediaWebPage,
+                    telethon.tl.types.MessageMediaVenue,
+                    telethon.tl.types.MessageMediaGame,
+                    telethon.tl.types.MessageMediaInvoice,
+                    telethon.tl.types.MessageMediaGeoLive,
+                    telethon.tl.types.MessageMediaPoll,
+                    telethon.tl.types.MessageMediaDice,
+                    None
+                ] = None,
+    reply_markup: Union[
+                            telethon.tl.types.ReplyKeyboardHide,
+                            telethon.tl.types.ReplyKeyboardForceReply,
+                            telethon.tl.types.ReplyKeyboardMarkup,
+                            telethon.tl.types.ReplyInlineMarkup,
+                            None
+                        ] = None,
+    entities: Optional[List[Union[
+                                    telethon.tl.types.MessageEntityUnknown,
+                                    telethon.tl.types.MessageEntityMention,
+                                    telethon.tl.types.MessageEntityHashtag,
+                                    telethon.tl.types.MessageEntityBotCommand,
+                                    telethon.tl.types.MessageEntityUrl,
+                                    telethon.tl.types.MessageEntityEmail,
+                                    telethon.tl.types.MessageEntityBold,
+                                    telethon.tl.types.MessageEntityItalic,
+                                    telethon.tl.types.MessageEntityCode,
+                                    telethon.tl.types.MessageEntityPre,
+                                    telethon.tl.types.MessageEntityTextUrl,
+                                    telethon.tl.types.MessageEntityMentionName,
+                                    telethon.tl.types.InputMessageEntityMentionName,
+                                    telethon.tl.types.MessageEntityPhone,
+                                    telethon.tl.types.MessageEntityCashtag,
+                                    telethon.tl.types.MessageEntityUnderline,
+                                    telethon.tl.types.MessageEntityStrike,
+                                    telethon.tl.types.MessageEntityBlockquote,
+                                    telethon.tl.types.MessageEntityBankCard,
+                                    telethon.tl.types.MessageEntitySpoiler,
+                                    telethon.tl.types.MessageEntityCustomEmoji]]
+                        ] = None,
+  views: Optional[int] = None,
+  edit_date: Optional[datetime.datetime] = None,
+  post_author: Optional[str] = None,
+  grouped_id: Optional[int] = None,
+  from_scheduled: Optional[bool] = None
+  legacy: Optional[bool] = None,
+  edit_hide: Optional[bool] = None,
+  pinned: Optional[bool] = None,
+  noforwards: Optional[bool] = None,
+  reactions: Optional[telethon.tl.types.MessageReactions] = None,
+  restriction_reason: Optional[telethon.tl.types.RestrictionReason] = None,
+  forwards: Optional[int] = None,
+  replies: Optional[telethon.tl.types.MessageReplies] = None,
+  action: Union[
+                telethon.tl.types.MessageActionEmpty,              telethon.tl.types.MessageActionChatCreate,          telethon.tl.types.MessageActionChatEditTitle,
+                telethon.tl.types.MessageActionChatEditPhoto,          telethon.tl.types.MessageActionChatDeletePhoto,          telethon.tl.types.MessageActionChatAddUser,
+                telethon.tl.types.MessageActionChatDeleteUser,          telethon.tl.types.MessageActionChatJoinedByLink,          telethon.tl.types.MessageActionChannelCreate,
+                telethon.tl.types.MessageActionChatMigrateTo,          telethon.tl.types.MessageActionChannelMigrateFrom,          telethon.tl.types.MessageActionPinMessage,
+                telethon.tl.types.MessageActionHistoryClear,          telethon.tl.types.MessageActionGameScore,                telethon.tl.types.MessageActionPaymentSentMe,
+                telethon.tl.types.MessageActionPaymentSent,          telethon.tl.types.MessageActionPhoneCall,               telethon.tl.types.MessageActionScreenshotTaken,
+                telethon.tl.types.MessageActionCustomAction,          telethon.tl.types.MessageActionBotAllowed,               telethon.tl.types.MessageActionSecureValuesSentMe,
+                telethon.tl.types.MessageActionSecureValuesSent,          telethon.tl.types.MessageActionContactSignUp,          telethon.tl.types.MessageActionGeoProximityReached,
+                telethon.tl.types.MessageActionGroupCall,          telethon.tl.types.MessageActionInviteToGroupCall,          telethon.tl.types.MessageActionSetMessagesTTL,
+                telethon.tl.types.MessageActionGroupCallScheduled,          telethon.tl.types.MessageActionSetChatTheme,          telethon.tl.types.MessageActionChatJoinedByRequest,
+                telethon.tl.types.MessageActionWebViewDataSentMe,          telethon.tl.types.MessageActionWebViewDataSent,          telethon.tl.types.MessageActionGiftPremium,
+                telethon.tl.types.MessageActionTopicCreate,                telethon.tl.types.MessageActionTopicEdit,          None
+                ] = None
+)
