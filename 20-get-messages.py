@@ -58,4 +58,18 @@ client.disconnect()
 
 df_messages: pd.DataFrame = pd.json_normalize(messages)
 
+#%% Map peer_id.channel_id to username
+
+channels_id_to_username: dict = {}
+for k in channels_filtered.keys():
+    channels_id_to_username[k] = channels_filtered[k]['username']
+
+try:
+    df_messages.insert(df_messages.columns.get_loc("peer_id.channel_id"),  # insert after peer_id.ch...
+                       'peer_id.channel_username',  # name
+                       df_messages['peer_id.channel_id'].map(channels_id_to_username))  # content
+except KeyError:
+    print("Error: 'peer_id.channel_id' not in df_messages.columns.")
+    print("Skipping assignment")
+
 df_messages.to_csv("./data/messages/" + datetime.datetime.now().strftime("%Y-%m-%d--%H%M") + "-messages.csv")
