@@ -2,6 +2,8 @@
 api_access_ibantel.txt
 /.idea/
 /data/
+/anon.session
+/Nutzer.session
 
 # Default ignored files
 /shelf/
