@@ -1,4 +1,4 @@
-# This file contains descriptions of selected Telethon classes of interest
+# This file contains descriptions of selected Telethon classes of interest [https://docs.telethon.dev/en/stable/modules/custom.html?highlight=message#module-telethon.tl.custom.message]
 
 
 # MESSAGE class
