@@ -1,10 +1,12 @@
 # Manual ignored files
 api_access_ibantel.txt
+link_gsheet.txt
 /.idea/
 /data/
 /plots/
 /anon.session
 /Nutzer.session
+
 
 # Default ignored files
 /shelf/
