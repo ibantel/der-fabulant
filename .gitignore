@@ -1,6 +1,6 @@
 # Manual ignored files
 api_access_ibantel.txt
-link_gsheet.txt
+info_gsheets.txt
 /.idea/
 /data/
 /plots/
@@ -16,3 +16,4 @@ link_gsheet.txt
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
+Nutzer.session-journal
