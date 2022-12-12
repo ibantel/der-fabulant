@@ -8,6 +8,7 @@ info_gsheets.txt
 /Nutzer.session
 
 
+
 # Default ignored files
 /shelf/
 /workspace.xml
@@ -17,3 +18,4 @@ info_gsheets.txt
 # Editor-based HTTP Client requests
 /httpRequests/
 Nutzer.session-journal
+*.pyc
